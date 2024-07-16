@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Google Maps button restored",
+    "version": "1.0",
+    "description": "Restore google maps button on search page",
+    "content_scripts": [
+      {
+        "js": ["content.js"],
+        "matches": [
+          "https://www.google.com/*"
+        ]
+      }
+    ]
+  }

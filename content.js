@@ -13,19 +13,20 @@ if (searchQuery) {
       newDiv.setAttribute('data-hveid', 'CBYQAA');
       newDiv.setAttribute('data-ved', '2ahUKEwj1n-q81qOHAsXwCqvEDHahCC8MqQJAB6BAgBEAA');
 
-      const newLink = document.createElement('a');
-      newLink.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(searchQuery)}`;
-      newLink.className = 'LatpMc nPDzT T3FoJb';
-      newLink.setAttribute('role', 'link');
-      newLink.setAttribute('data-hveid', 'CBYQAA');
-      newLink.setAttribute('data-ved', '2ahUKEwj1n-q81qOHAsXwCqvEDHahCC8MqQJegQIFhAB');
+      const aTag = document.createElement('a');
+      aTag.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(searchQuery)}`;
+      aTag.className = 'LatpMc nPDzT T3FoJb';
+      aTag.setAttribute('role', 'link');
+      aTag.setAttribute('data-hveid', 'CBYQAA');
+      aTag.setAttribute('data-ved', '2ahUKEwj1n-q81qOHAsXwCqvEDHahCC8MqQJegQIFhAB');
 
       const innerLinkDiv = document.createElement('div');
       innerLinkDiv.className = 'YmvwI';
       innerLinkDiv.textContent = 'Maps';
-      newLink.appendChild(innerLinkDiv);
 
-      newDiv.appendChild(newLink);
+      aTag.appendChild(innerLinkDiv);
+
+      newDiv.appendChild(aTag);
 
       innerDiv.appendChild(newDiv);
     }
